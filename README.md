@@ -12,6 +12,6 @@ The volume `/data` is supported if you want to persist the queue on disk
 instead of keeping it in-memory.
 
 ```
-docker run -v $(pwd)/beanstalkd_data:/data -p 11300:11300 madsen/beanstalkd:latest
+docker run -v $(pwd)/beanstalkd_data:/data -p 11300:11300 madsen/beanstalkd:latest -b /data
 ```
 
